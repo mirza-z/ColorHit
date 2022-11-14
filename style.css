@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+
+
+#myCanvas{
+    width: 100vw;
+    height: 100vh;
+    background: #525252;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3d72b4, #525252);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 5px dashed #000000;
+}
+
+#rez{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+#main-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#igra{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.okvir{
+    width: 150px;
+    height: 100vh;
+}
+
+#main-menu .main-buttons{
+    top: 300px;
+}
+
+.main-buttons{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px; 
+    margin-top: 25px;
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 250px;
+}
+
+.ime{
+    position: absolute;
+    top: 200px;
+}
+
+#opcije{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#eksplodiraj{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#eksplodiraj .main-buttons{
+    top:400px;
+}
+
+.tekstic{
+    position: absolute;
+    top: 300px;
+}
+
+#skor{
+    position: absolute;
+    top: 350px;
+    color:indigo;
+}
+
+.dugme{
+    position: absolute;
+    top: 760px;
+    left: 340px;
+    background-color: darkmagenta;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+#upute{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.dav{
+    position: absolute;
+    top: 200px;
+    left: 115px;
+    width: 210px;
+    font-weight: bold;
+}
+
+.daj{
+    position: absolute;
+    top: 300px;
+    left: 115px;
+    width: 200px;
+    font-weight: bold;
+}
+
+#upute .okvir button{
+    top: 370px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>World</title>
+</head>
+<body>
+    <section id="main-menu"> 
+        <h1 class="ime">Color Hit</h1>
+        <div class="okvir">
+            <button class="main-buttons" onclick="play()">Igraj</button>
+            <button class="main-buttons" onclick="options()">Opcije</button>
+            <button class="main-buttons" onclick="instructions()">Upute</button>
+        </div>
+    </section>
+
+    <section id="igra"> 
+       <h1 id="rez">Score: 0</h1>
+       <button class="dugme" onclick="plColor()">Color</button>
+        <canvas id="myCanvas">
+        </canvas>
+    </section>
+
+    <section id="opcije"> 
+        <div class="okvir">
+            <button class="main-buttons" onclick="fullscreen()">Fullscreen!</button>
+            <button class="main-buttons" onclick="main()">Natrag</button>
+        </div>
+    </section>   
+
+    <section id="eksplodiraj"> 
+        
+        <h1 class="tekstic">Vas score je: </h1>
+        <h2 id="skor"></h2>
+        <div class="okvir">   
+            <button class="main-buttons" onclick="startNewGame()">Meni</button>
+        </div>
+    </section>
+
+    <section id="upute"> 
+        
+        <div class="okvir">
+            <p class="dav">Spojite lopticu i crticu iste boje. Ukoliko nema se nijedna boja loptice i crtice ne slazu pritisnite Color dugme.</p>
+            <p class="daj">Izgubili ste ukoliko ste spojili pogresnu boju loptice i boju crtice ili ako ste dirali okvir.</p>
+            <button class="main-buttons" onclick="main()">Natrag</button>
+        </div>
+    </section>  
+
+    <script src="script.js"></script>
+    <script src="swipe.js"></script>
+</body>
+</html>
